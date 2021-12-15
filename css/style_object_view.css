@@ -1,0 +1,73 @@
+/*MAIN*/
+main{ /*Eligimos el fondo*/
+    background: url(../img/Fondo2.png);
+    background-size: cover;
+}
+main>div{ /*La altura del div es distinta, por el padding*/
+    height: 694px; /*800- 3*2 border - 50*2 padding*/
+    padding: 50px;
+}
+main img{ /*Img tamaño*/
+    width: 280px;
+    height: 280px;
+}
+main>div{ /*El div es flex*/
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+main>div>*:nth-child(2){ /*Texto*/
+    width: 60%;
+    padding: 50px;
+}
+main>div>*:nth-child(2) h2{ /*Titulo*/
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+main>div>*:nth-child(3){ /*Catg & Loot*/
+    width: 50%;
+}
+main>div>*:nth-child(3)>p{ /*Fuente (no sirve ponerlo arriba)*/
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+main>div>*:nth-child(4){ /*Boton*/
+    width: 40%;
+    height: 75px;
+    border: white 2px solid;
+    text-align: center;
+    line-height: 75px;
+    font-size: 26px;
+}
+
+/*RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+    main>div>*:nth-child(2){ /*Titulo*/
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    main>div>*:nth-child(2){ /*Titulo*/
+        padding: 0px 50px 50px 30px;
+        width: 50%;
+    }
+    main img{ /*Img tamaño*/
+        width: 200px;
+        height: 200px;
+    }
+    main>div>*:nth-child(3)>p,main>div>*:nth-child(4){ /*Catg & Loot & Boton*/
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    main>div>*:nth-child(4){ /*Boton*/
+        font-size: 16px;
+    }
+    main>div>*:nth-child(2),main>div>*:nth-child(3),main>div>*:nth-child(4){  /*Titulo & Catg & Loot & Boton*/
+        padding: 10px;
+        width: 90%;
+    }
+    main>div{ /*Centramos*/
+        justify-content: center;
+    }
+} 

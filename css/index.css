@@ -1,0 +1,71 @@
+/* 10vh = 70px*/
+/* Se puede reducir hasta los min-height px, desde ahi, tendras que hacer scroll con la barra*/
+header{
+    width: 100%;
+    height: 98px;
+    border: white 1px solid;
+}
+header>a{
+    font-family: Zelda; 
+    font-size: 2em;
+}
+h1{
+    display: block;
+}
+header>a:nth-child(1){
+    width: 30%;
+    padding-top: 0.5em;
+}
+header>a:nth-child(2){
+    width: 30%;
+}
+header>a:nth-child(3){
+    width: 30%;
+    padding-top: 1em;
+}
+
+footer{
+    width: 100%;
+    height: 126px;
+    background: rgba(0, 36, 72, 0.8);
+    border: white 1px solid;
+}
+header,footer{
+    display: flex;
+    justify-content: space-around;
+}
+header>a>img{
+    width: 100%;
+    height: 100%;
+}
+header>a{
+    text-align: center;
+}
+main{
+    height: 80vh;
+    min-height: 462px;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    background: url(../img/Fondo1.png);
+    background-size: cover;
+    
+}
+main>*{
+    position: absolute;
+    max-height: 80vh;
+}
+.background{
+    border: white 1px solid;
+}
+#link{
+    max-height: initial;
+    height: 150%;
+}
+@font-face {
+    font-family: Zelda;
+    src: url("path/../../otf/The\ Wild\ Breath\ of\ Zelda.otf") format("opentype");
+}

@@ -1,0 +1,94 @@
+/*MAIN*/
+main{ /*Elegimos el fondo, y diseñamos para un scroll*/
+    background: url(../img/Fondo2.png);
+    background-size: cover;
+    overflow: scroll;
+    overflow-x: hidden;
+    align-items: initial;
+}
+main>div{ /*Esto es para que el div contenga solo a la busqueda y al boton, por motivos de color de fondo*/
+    height: 454px;
+}
+main form{ /*Diseñamos el form de arriba*/
+    height: 394px;
+    border-bottom: black 3px solid;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+main form>*{ /*Cada elemento del form*/
+    height: 20px;
+    width: 100%;
+}
+main form>input,main form>select{ /*Margin y longitud de las dos barras*/
+    margin-bottom: 100px;
+    width: 70%;
+}
+main form a{ /*Estilos del boton*/
+    border: white 2px solid;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+main img{ /*Estilos de las imagenes de la lista*/
+    border: white 2px solid;
+    margin-right: 30px;
+    width: 280px;
+    height: 280px;
+}
+main h2{ 
+    font-size: 26px;
+}
+
+main a>div{ /*Estilos de cada elemento de la lista*/
+    background-color: #191b2ef5;
+    border-bottom: 3px black solid;
+    border-right: 3px black solid;
+    border-left: 3px black solid;
+    padding: 50px 100px 50px 100px;
+    margin: 0px -3px 0px -3px; /*Aqui pasa algo raro, lo he solucionado a lo bruto*/
+    display: flex;
+    flex-wrap: wrap;
+}
+main a>div>div{ /*Longitud del texto*/
+    width:  60%;
+}
+main a>div>div>h2{ /*Margen del titulo al texto*/
+    margin-bottom: 30px;
+}
+#error {
+    background-color: #191b2ef5;
+    border: 3px black solid;
+    font-size: 16px;
+}
+
+/*RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+    main a>div>div{ /*Longitud del texto*/
+        width:  40%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    main a>div{ /*Estilos de cada elemento de la lista*/
+        padding: 10px;
+    }
+    main a>div>div>p{ /*Quitamos la descripcion*/
+        visibility: hidden;
+    }
+    main a>div>div{ /*Centramos el titulo*/
+        padding-top: 120px;
+        width: 20%;
+    }
+    main form>input,main form>select{ /*Alargamos las barras*/
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) { /*Aqui por algun motivo el bloque del div y de la img se alargan hacia abajo, no se como arreglarlo*/
+    main img{ /*Img mas pequeñas*/
+        width: 200px;
+        height: 200px;
+    }
+    main a>div>div{ /*Volvemos a centrar el texto*/
+        padding-top: 80px;
+    }
+} 

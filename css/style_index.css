@@ -1,0 +1,50 @@
+/*MAIN*/
+main{ /*Eligimos el fondo*/
+    background: url(../img/Fondo1.png);
+    background-size: cover;
+}
+main>*{
+    position: absolute;
+}
+    main>a{ /*Boton del Main*/
+        width: 30%;
+        line-height: 7vw;
+        height: 7vw;
+        background: rgba(0, 36, 72, 0.8);
+        border: 2px solid rgba(16, 207, 233, 0.8);
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-size: 3vw;
+        text-align: center;
+        margin-top: 300px;
+    }
+    main>a:hover{ /*Boton del Main*/
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+    }
+    #link{ /*(El del arco)*/
+        max-height: initial;
+        height: 140%;
+        padding-top: 10%;
+    }
+/*RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+    main>a{
+        line-height: 90px;
+        height: 90px;
+        width: 400px;
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    main>a{
+        line-height: 70px;
+        height: 70px;
+        width: 300px;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 480px) {
+} 

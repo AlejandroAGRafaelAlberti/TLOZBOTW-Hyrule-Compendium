@@ -1,0 +1,306 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: Zelda;
+    src: url("path/../../otf/The\ Wild\ Breath\ of\ Zelda.otf") format("opentype");
+}
+/*ALL STYLES*/
+*{
+	color: white;
+}
+/*RESETS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*GENERAL STYLES*/
+a:link { /*Enlaces*/
+	text-decoration: none;
+  }
+  
+  a:visited {
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  a:active {
+	text-decoration: underline;
+  }
+
+body{ /*Si se ve el fondo, es negro (Pero no deberia)*/
+    background: #0E0E0E;
+}
+p{
+    font-size: 14px;
+}
+input, select,option,textarea,#checkbox{ /*Inputs con borde y fondo*/
+    background-color: #191b2ef5;
+    border: white 2px solid;
+}
+label{
+    font-size: 16px;
+}
+
+/*FLEX HEADER & FOOTER*/
+header,footer{ /*Son flex*/
+    display: flex;
+    justify-content: space-around;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 125px;
+    font-family: Zelda; 
+    font-size: 3vw;
+}
+header>a{ /*Cada elemento del header*/
+    width: 40%;
+    text-align: center;
+}
+    /*HEADER TITLE*/
+    header>a:nth-child(1){
+        line-height: 62px; 
+    }
+    header>a:nth-child(1)>h1:nth-child(2){
+        line-height: 62px;
+    }
+    /*HEADER IMG*/
+    header>a:nth-child(2){
+        width: 300px;
+    }
+    header>a>img{
+        width: 100%;
+        height: 100%;
+    }
+    /*HEADER LOGIN*/
+    header>a:nth-child(3){
+        line-height: 125px;
+    }
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 200px;
+    background: #002448;
+    font-size: 26px;
+}
+footer>*{
+    width: 30%;
+}
+    /*FOOTER SOCIAL*/
+    footer>ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer img{
+        width: 3vw;
+    }
+    /*FOOTER LINKS*/
+    footer>nav>ul{
+        text-align: right;
+        padding-right: 12vw;
+        line-height: 50px; /*200 height/4 lines*/
+    }
+    /*FOOTER DESCRIPTION*/
+    footer h2 {
+        line-height: 67px; /*200 height/3 (1/3 of footer)*/
+    }
+
+/*RESPONSIVE FOOT/HEADER + P*/
+@media only screen and (max-width: 1328px) { /*Tamaños de fuente*/
+    p{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 20px;
+    }
+    header{
+        font-size: 3.5vw;
+    }
+}
+@media only screen and (max-width: 960px) { /*Tamaños de fuente  y del header*/
+    p{
+        font-size: 11px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    footer>*{
+        width: 35%;
+    }
+    footer>ul{
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 480px) { /*Tamaños de fuente, del header y del footer*/
+    header{
+        font-size: 12px;
+    }
+    header>a:nth-child(3){
+        font-size: 20px;
+    }
+    header>a:nth-child(1){
+        line-height: 32px;
+        margin-top: 30px; 
+    }
+    header>a:nth-child(1)>h1:nth-child(2){
+        line-height: 32px;
+    }
+    footer{ /*Pasa a 1 elemento por linea*/
+        height: 300px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    footer>div{
+        padding: 20px;
+    }
+    footer>ul,footer>nav>ul{ /*Pasa a 1 elemento por linea*/
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
+    footer>ul *{
+        display: inline;
+        width: 50px;
+    }
+    footer *{
+        width: 100%;
+    }
+} 
+/*GENERAL MAIN*/
+main{ /*Estilos del main*/
+    height: 800px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+main>div{ /*Estilos del bloque del main*/
+    background-color: #191b2ef5;
+    height: 794px; /*800- 3*2 border*/
+    width: 80%;
+    border: black 3px solid;
+}
+/*GENERAL FORM*/
+main form{ /*Los form son flex todos*/
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Hay dos tipos "data" y "checkbox"*/
+/*Solo cambia si la label o el input es mas largo*/
+label.data{ 
+    width: 45%; /*45% largo*/
+    height: 80px;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 10px;
+    padding-left: 3%;
+}
+input.data,select.data,textarea.data{
+    width: 40%; /*40% largo*/
+    height: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+label.checkbox{
+    width: 55%; /*55% largo*/
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+input.checkbox{ 
+    width: 20px; 
+    height: 20px;
+    margin: 20px 17% 0px 17%; /*20+17%*2 largo*/
+}
+#submit,#error{ /*Boton y mensaje de error*/
+    width: 50%; /*50% largo*/
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 25%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+}
+/*GENERAL RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+}
+@media only screen and (max-width: 960px) {
+    main>div{ /*El div cubre todo el main*/
+        width: 100%;
+    }
+    form{ /*Los form se centran*/
+        justify-content: center;
+    }
+    /*Se alarga todo, ya que las label e inputs no estan en la misma linea ahora*/
+    label.data,input.data,label.checkbox,input.checkbox,select.data{
+        width: 70%;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    label.data,label.checkbox{
+        height: 40px; 
+        text-align: center;
+    }
+    #submit,#error{
+        width: 80%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 0px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    #body{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 480px) {
+} 

@@ -1,0 +1,15 @@
+/*MAIN*/
+main{ /*Eligimos el fondo*/
+    background: url(../img/Fondo3.png);
+    background-size: cover;
+}
+
+/*RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+}
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 480px) {
+} 
+
+/*No me ha dado tiempo hacer el mapa, sorry :c */

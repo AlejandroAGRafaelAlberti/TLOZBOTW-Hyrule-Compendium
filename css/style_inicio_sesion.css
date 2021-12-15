@@ -1,0 +1,18 @@
+/*MAIN*/
+main{ /*Eligimos el fondo*/
+    background: url(../img/Fondo2.png);
+    background-size: cover; 
+}
+main form{
+    padding-top: 150px;
+}
+/*RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+}
+@media only screen and (max-width: 960px) {
+    form>*:nth-child(5){
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 480px) {
+}

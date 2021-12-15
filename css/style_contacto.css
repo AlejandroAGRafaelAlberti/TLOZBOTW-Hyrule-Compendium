@@ -1,0 +1,20 @@
+/*MAIN*/
+main{ /*Eligimos el fondo*/
+    background: url(../img/Fondo2.png);
+    background-size: cover;
+}
+#body{ /*Altura del textarea*/
+    height: 200px;
+    text-align: start;
+    line-height: normal;
+}
+/*RESPONSIVE MAIN*/
+@media only screen and (max-width: 1328px) {
+}
+@media only screen and (max-width: 960px) {
+    form>*:nth-child(6){
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 480px) {
+} 

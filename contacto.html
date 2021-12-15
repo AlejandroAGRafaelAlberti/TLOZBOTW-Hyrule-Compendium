@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_contacto.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="title"><h1>The Legend Of Zelda</h1><h1>Breath Of The Wild</h1></a>
+        <a href="busqueda_mapa.html"><img src="img/Sheika.png" alt="icon"></a>
+        <a href="registro.html"id="headerlink"><h1>Sign in/Log In</h1></a>
+        <style>
+            main form{
+                padding-top: 100px;
+            }
+        </style>
+    </header>
+    <main>
+        <div>
+            <form action="">
+                <label for="area"class="data">Motive of message</label>
+                <select name="area"class="data">
+                    <option value="1">I have a problem with the web</option>
+                    <option value="2">Suggestions</option>
+                    <option value="3">Incorrect information</option>
+                    <option value="5" selected="selected">Other</option>
+                </select>
+                <label for="title"class="data">Title</label>
+                <input type="text" name="title"class="data">
+                <label for="body"class="data">Description</label>
+                <textarea name="body" id="body" cols="30" rows="10" class="data"></textarea>
+                <p id="error" style="color: red;"></p>
+                <input type="submit" value="Send" id="submit">
+                <input type="hidden" value="false" name="logged in" id="logged">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2>¿What is this page about?</h2>
+            <p>
+                This page serves as a web browser of the Hyrule Compendium, meaning a record of every photograpable entity in the game The legend Of Zelda Breath of The Wild, for consoles Wii U or Nintendo Switch. This is not an oficial page.
+            </p>
+        </div>
+        <ul id="redes">
+            <li><a href="404.html"><img src="img/Facebook.png" alt="facebook"></a><!--Facebook--></li>
+            <li><a href="404.html"><img src="img/Instagram.png" alt="instagram"></a><!--Instagram--></li>
+            <li><a href="404.html"><img src="img/Tumblr.png" alt="tumbrl"></a><!--Tumblr--></li>
+            <li><a href="404.html"><img src="img/Twitter.png" alt="twitter"></a><!--Twitter--></li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="404.html">Legal Warning</a></li>
+                <li><a href="contacto.html">Contact us</a></li>
+                <li><a href="404.html">Privacy Policy</a></li>
+                <li><a href="404.html">Cookies</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/contacto.js"></script>
+</body>
+</html>
