@@ -73,7 +73,7 @@ main a>div>div>h2{ /*Margen del titulo al texto*/
         padding: 10px;
     }
     main a>div>div>p{ /*Quitamos la descripcion*/
-        visibility: hidden;
+        display: none;
     }
     main a>div>div{ /*Centramos el titulo*/
         padding-top: 120px;
