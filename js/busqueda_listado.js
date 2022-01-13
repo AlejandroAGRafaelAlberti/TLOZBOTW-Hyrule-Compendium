@@ -1,5 +1,6 @@
 "use strict";
-let suggestions = document.querySelector("#suggestions") 
+let suggestions = document.querySelector("#suggestions")
+let category = document.querySelector("#category") 
 let search = document.querySelector("#search")
 let list = document.querySelector("#list")
 let Lchildren = list.children
@@ -26,6 +27,36 @@ search.onblur = function (){ /*Usamos el evento onblur*/
     }
 }
 /*Motor de busqueda*/
+category.onblur = function(){
+    for (let i = 0; i < Lchildren.length; i++) {
+        let objeto = Lchildren[i]
+        let id = objeto.id;
+        let busqueda = category.value
+        id = id.toLowerCase()
+        busqueda = busqueda.toLowerCase()
+        if(id == "error") { /*esto borra cualquier div extra, si no se llenaria de divs ocultos*/
+            objeto.remove()
+        }
+        if (!id.includes(busqueda)){
+
+            objeto.classList.add("invalid")
+            objeto.style.display = "none"
+        }
+        if (id.includes(busqueda)){
+            if(objeto.classList.contains("invalid")){
+                objeto.classList.remove("invalid")
+                objeto.style.display = "initial"
+            }
+        }
+    }
+    let invalid = 0
+    for (let i = 0; i < Lchildren.length; i++) { /*Cuenta si algun resultado es valido*/
+        let objeto = Lchildren[i]
+        if(objeto.classList.contains("invalid")){
+            invalid +=1
+        }
+    }
+}
 search.oninput = function(){
     for (let i = 0; i < Lchildren.length; i++) {
         let objeto = Lchildren[i]
