@@ -1,0 +1,11 @@
+<a href="object_view.html" id="Chest">
+    <div>
+        <img src="img/Cofre.png" alt="cofre">
+        <div>
+            <h2>Chest</h2>
+            <p>
+                Fortunes untold (potentially) await the lucky adventurer who finds one of these. Chests can often be found within shrines or at enemy camps, but there may be some crafty folks who think they're safer underground.
+            </p>
+        </div>
+    </div>
+</a>

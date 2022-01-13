@@ -16,52 +16,29 @@
     </header>
     <main>
         <div>
-        <div>
-            <form action="">
-                <!--Magnifiying glass-->
-                <input type="text" name="busqueda" placeholder="Search Something..." list="suggestions" id="search">
-                <datalist id= "suggestions">
-                    <option>Chest</option>
-                    <option>Ore Deposit</option>
-                    <option>Chest</option>
-                </datalist>
-                <label for="categorias">Categories</label>
-                <select name="categorias">
-                    <option value="All" selected>All</option>
-                    <option value="Tesoros">Treasures</option>
-                    <option value="Creatures">Creatures</option>
-                    <option value="Equipment">Equipment</option>
-                    <option value="Materials">Materials</option>
-                    <option value="Monsters">Monsters</option>
-                </select>
-                <a href="busqueda_mapa.html">Search by Map</a>
-            </form>
-
-        </div>
-        <div id="list">
-            <a href="object_view.html" id="Chest">
-                <div>
-                    <img src="img/Cofre.png" alt="cofre">
-                    <div>
-                    <h2>Chest</h2>
-                    <p>
-                        Fortunes untold (potentially) await the lucky adventurer who finds one of these. Chests can often be found within shrines or at enemy camps, but there may be some crafty folks who think they're safer underground.
-                    </p>
-                    </div>
-                </div>
-            </a>
-            <a href="404.html" id="Ore Deposit">
             <div>
-                <img src="img/Ore.png" alt="ore">
-                <div>
-                <h2>Ore Deposit</h2>
-                <p>
-                    This deposit contains a good deal of ore. Breaking the rock will yield rock salt, flint, and other minerals of varying value.
-                </p>
+                <form action="">
+                    <!--Magnifiying glass-->
+                    <input type="text" name="busqueda" placeholder="Search Something..." list="suggestions" id="search">
+                    <datalist id= "suggestions">
+                        <option>Chest</option>
+                        <option>Ore Deposit</option>
+                        <option>Chest</option>
+                    </datalist>
+                    <label for="categorias">Categories</label>
+                    <select name="categorias">
+                        <option value="All" selected>All</option>
+                        <option value="Tesoros">Treasures</option>
+                        <option value="Creatures">Creatures</option>
+                        <option value="Equipment">Equipment</option>
+                        <option value="Materials">Materials</option>
+                        <option value="Monsters">Monsters</option>
+                    </select>
+                    <a href="busqueda_mapa.html">Search by Map</a>
+                </form>
             </div>
+            <div id="list">
             </div>
-            </a>
-        </div>
         </div>
     </main>
     <footer>
@@ -86,6 +63,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="js/apiCall.js"></script>
     <script src="js/busqueda_listado.js"></script>
 </body>
 </html>

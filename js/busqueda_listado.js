@@ -11,7 +11,6 @@ let empty = false
 /*Cambiamos las sugerencias segun lo que se ponga en el objeto*/
 search.onblur = function (){ /*Usamos el evento onblur*/
     let busqueda = search.value
-    console.log(busqueda)
     if(busqueda != ""){
         if(count===1){
             child1.innerText = busqueda
