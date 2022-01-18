@@ -40,7 +40,6 @@ fetch("https://botw-compendium.herokuapp.com/api/v2")
 .then(response => response.json())
 .then(data =>{
     data = data.data
-    console.log(data)
     addToList(data.creatures.food)
     addToList(data.creatures.non_food)
     addToList(data.equipment)

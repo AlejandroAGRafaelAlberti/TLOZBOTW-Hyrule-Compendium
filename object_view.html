@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>*Name of the object*(Treasure Chest)</title>
+    <title>Loading...</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_object_view.css">
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,20 +16,20 @@
     </header>
     <main>
         <div>
-            <img src="img/Cofre.png" alt="">
+            <img src="img/loading.gif" alt="" id="image">
             <div>
-            <h2>Treasure Chest : 386</h2>
-            <h2>Description:</h2>
-            <p>
-                Fortunes untold (potentially) await the lucky adventurer who finds one of these. Chests can often be found within shrines or at enemy camps, but there may be some crafty folks who think they're safer underground.
+            <h2 id="object_name">Loading... Please wait</h2>
+            <h2 id="h2"></h2>
+            <p id="description">
+                
             </p>
             </div>
             <div>
-            <p>
-                Category: Treasure <span class="iconify" data-icon="mdi:treasure-chest" style="color: #ffc700;"></span>
+            <p id="category">
+
             </p>
-            <p>
-                Drops: Treasures <span class="iconify" data-icon="mdi:treasure-chest" style="color: #ffc700;"></span>
+            <p id="drops">
+
             </p>
             </div>
             <a href="busqueda_mapa.html">View in map</a>
@@ -58,5 +57,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="js/apiObject.js"></script>
 </body>
 </html>
