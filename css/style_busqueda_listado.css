@@ -33,8 +33,8 @@ main form a{ /*Estilos del boton*/
 main img{ /*Estilos de las imagenes de la lista*/
     border: white 2px solid;
     margin-right: 30px;
-    width: 280px;
-    height: 280px;
+    width: 140px;
+    height: 140px;
 }
 main h2{ 
     font-size: 26px;
@@ -76,7 +76,7 @@ main a>div>div>h2{ /*Margen del titulo al texto*/
         display: none;
     }
     main a>div>div{ /*Centramos el titulo*/
-        padding-top: 120px;
+        padding-top: 50px;
         width: 20%;
     }
     main form>input,main form>select{ /*Alargamos las barras*/
@@ -84,11 +84,7 @@ main a>div>div>h2{ /*Margen del titulo al texto*/
     }
 }
 @media only screen and (max-width: 480px) { /*Aqui por algun motivo el bloque del div y de la img se alargan hacia abajo, no se como arreglarlo*/
-    main img{ /*Img mas pequeñas*/
-        width: 200px;
-        height: 200px;
-    }
     main a>div>div{ /*Volvemos a centrar el texto*/
-        padding-top: 80px;
+        padding-top: 50px;
     }
 } 
