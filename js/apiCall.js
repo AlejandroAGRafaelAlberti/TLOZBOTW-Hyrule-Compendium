@@ -4,7 +4,7 @@ function addToList(category){
     category.forEach(element => {
         element.name = element.name.charAt(0).toUpperCase() + element.name.slice(1)
         divlist.insertAdjacentHTML("beforeend",
-        `<a href="object_view.html" id="${element.name}" class="${element.category}">
+        `<a href="object_view.html?id=${element.id}" id="${element.name}" class="${element.category}">
         <div>
         <img src="${element.image}" alt="cofre">
         <div>

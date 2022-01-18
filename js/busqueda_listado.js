@@ -40,12 +40,14 @@ category.onchange = function(){
         if (myCategory.contains(filter)){
             if(objeto.classList.contains("wrongFilter")){
                 objeto.classList.remove("wrongFilter")
+                if(!objeto.classList.contains("invalid"))
                 objeto.style.display = "initial"
             }
         }
         if(filter == "all"){
             if(objeto.classList.contains("wrongFilter")){
                 objeto.classList.remove("wrongFilter")
+                if(!objeto.classList.contains("invalid"))
                 objeto.style.display = "initial"
             }
         }
@@ -76,6 +78,7 @@ search.oninput = function(){
         if (id.includes(busqueda)){
             if(objeto.classList.contains("invalid")){
                 objeto.classList.remove("invalid")
+                if(!objeto.classList.contains("wrongFilter"))
                 objeto.style.display = "initial"
             }
         }
