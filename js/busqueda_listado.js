@@ -27,24 +27,25 @@ search.onblur = function (){ /*Usamos el evento onblur*/
     }
 }
 /*Motor de busqueda*/
-category.onblur = function(){
+category.onchange = function(){
     for (let i = 0; i < Lchildren.length; i++) {
         let objeto = Lchildren[i]
-        let id = objeto.id;
-        let busqueda = category.value
-        id = id.toLowerCase()
-        busqueda = busqueda.toLowerCase()
-        if(id == "error") { /*esto borra cualquier div extra, si no se llenaria de divs ocultos*/
-            objeto.remove()
-        }
-        if (!id.includes(busqueda)){
-
-            objeto.classList.add("invalid")
+        let myCategory = objeto.classList;
+        let filter = category.value
+        console.log(filter);
+        if (!myCategory.contains(filter)){
+            objeto.classList.add("wrongFilter")
             objeto.style.display = "none"
         }
-        if (id.includes(busqueda)){
-            if(objeto.classList.contains("invalid")){
-                objeto.classList.remove("invalid")
+        if (myCategory.contains(filter)){
+            if(objeto.classList.contains("wrongFilter")){
+                objeto.classList.remove("wrongFilter")
+                objeto.style.display = "initial"
+            }
+        }
+        if(filter == "all"){
+            if(objeto.classList.contains("wrongFilter")){
+                objeto.classList.remove("wrongFilter")
                 objeto.style.display = "initial"
             }
         }
