@@ -1,5 +1,5 @@
 ﻿
-# Hola Soy Alejandro,
+# Hola Soy Alejandro
 
 Este proyecto trata sobre... una página que sirve de navegador web de la encyclopedia hyleana, en su totalidad . Es decir, un navegador de cualquier entidad fotógrafiable del juego The legend Of Zelda Breath of The Wild, para las consolas Wii U o Nintendo Switch. usando la API https://github.com/gadhagod/Hyrule-Compendium-API 
 
